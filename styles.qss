@@ -1,0 +1,148 @@
+/* General styles */
+QWidget {
+    background-color: #f4f6f9;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    color: #212529;
+}
+
+QLabel {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+QLineEdit, QComboBox, QDateEdit {
+    background-color: #f1f1f1;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+QLineEdit:focus, QComboBox:focus, QDateEdit:focus {
+    border-color: #3F51B5;
+    outline: none;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+QPushButton:hover {
+    background-color: #0056b3;
+}
+
+QPushButton:pressed {
+    background-color: #003d80;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/* Sidebar */
+QListWidget {
+    background-color: #ffffff;
+    color: #212529;
+    border: none;
+    padding: 10px;
+}
+
+QListWidget::item {
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+QListWidget::item:selected {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+QListWidget::item:hover {
+    background-color: #e9ecef;
+}
+
+/* Tables */
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QTableWidget::item {
+    padding: 10px;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #007bff;
+}
+
+QHeaderView::section {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+QTableWidget::item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Stacked Widget */
+QStackedWidget > QWidget {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/* Layout for the Home Page */
+QHBoxLayout {
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+/* Input field for search */
+QLineEdit {
+    background-color: #f1f1f1;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-right: 10px;  /* Espaçamento entre o campo de pesquisa e o botão */
+    min-width: 250px;
+}
+
+/* Estilo do botão de pesquisa */
+QPushButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+QPushButton:hover {
+    background-color: #0056b3;
+}
+
+QPushButton:pressed {
+    background-color: #003d80;
+    padding-left: 15px;
+    padding-top: 15px;
+}
